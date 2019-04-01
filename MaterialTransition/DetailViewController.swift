@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Hero
 
 class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hero.isEnabled = true
     }
 }

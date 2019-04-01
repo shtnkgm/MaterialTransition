@@ -15,6 +15,8 @@
 		9726A89B22524DEE0021311B /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9726A89922524DEE0021311B /* ListViewController.xib */; };
 		9726A89E22524E000021311B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9726A89C22524E000021311B /* DetailViewController.swift */; };
 		9726A89F22524E000021311B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9726A89D22524E000021311B /* DetailViewController.xib */; };
+		9726A8A222524FA70021311B /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9726A8A022524FA70021311B /* ListViewCell.swift */; };
+		9726A8A322524FA70021311B /* ListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9726A8A122524FA70021311B /* ListViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		9726A89922524DEE0021311B /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		9726A89C22524E000021311B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9726A89D22524E000021311B /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		9726A8A022524FA70021311B /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		9726A8A122524FA70021311B /* ListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewCell.xib; sourceTree = "<group>"; };
 		C77FBAAAF3102A87ED9F1439 /* Pods-MaterialTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialTransition.debug.xcconfig"; path = "Target Support Files/Pods-MaterialTransition/Pods-MaterialTransition.debug.xcconfig"; sourceTree = "<group>"; };
 		DC7542A2CF3E783B128D6AC0 /* Pods_MaterialTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,6 +89,8 @@
 				9726A88622524BD50021311B /* AppDelegate.swift */,
 				9726A89822524DEE0021311B /* ListViewController.swift */,
 				9726A89922524DEE0021311B /* ListViewController.xib */,
+				9726A8A022524FA70021311B /* ListViewCell.swift */,
+				9726A8A122524FA70021311B /* ListViewCell.xib */,
 				9726A89C22524E000021311B /* DetailViewController.swift */,
 				9726A89D22524E000021311B /* DetailViewController.xib */,
 				9726A88D22524BD60021311B /* Assets.xcassets */,
@@ -156,6 +162,7 @@
 			files = (
 				9726A89122524BD60021311B /* LaunchScreen.storyboard in Resources */,
 				9726A88E22524BD60021311B /* Assets.xcassets in Resources */,
+				9726A8A322524FA70021311B /* ListViewCell.xib in Resources */,
 				9726A89B22524DEE0021311B /* ListViewController.xib in Resources */,
 				9726A89F22524E000021311B /* DetailViewController.xib in Resources */,
 			);
@@ -210,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9726A8A222524FA70021311B /* ListViewCell.swift in Sources */,
 				9726A89E22524E000021311B /* DetailViewController.swift in Sources */,
 				9726A89A22524DEE0021311B /* ListViewController.swift in Sources */,
 				9726A88722524BD50021311B /* AppDelegate.swift in Sources */,
