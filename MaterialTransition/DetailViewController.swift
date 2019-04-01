@@ -19,9 +19,29 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hero.isEnabled = true
+        
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(didPan))
+        view.addGestureRecognizer(panGesture)
     }
     
     @IBAction func closeDidTap(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func didPan(panGestureRecognizer: UIPanGestureRecognizer) {
+        let translation = panGestureRecognizer.translation(in: nil)
+        let progress = translation.y / 2 / view.bounds.height
+        switch panGestureRecognizer.state {
+        case .began:
+            hero.dismissViewController()
+        case .changed:
+            Hero.shared.update(progress)
+        default:
+            if progress + panGestureRecognizer.velocity(in: nil).y / view.bounds.height > 0.3 {
+                Hero.shared.animationEnded(true)
+            } else {
+                Hero.shared.cancel()
+            }
+        }
     }
 }
