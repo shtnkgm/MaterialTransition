@@ -11,6 +11,10 @@ import UIKit
 class ListViewCell: UICollectionViewCell {
     static let className = String(describing: ListViewCell.self)
     
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         layer.cornerRadius = 20

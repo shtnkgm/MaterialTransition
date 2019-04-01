@@ -24,9 +24,6 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mug" translatesAutoresizingMaskIntoConstraints="NO" id="Q5v-z4-1Hm">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="image"/>
-                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfQ-cL-jQn">
                                 <rect key="frame" x="0.0" y="130" width="200" height="70"/>
@@ -39,18 +36,12 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="title"/>
-                                                </userDefinedRuntimeAttributes>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFi-Fh-WIx">
                                                 <rect key="frame" x="0.0" y="24.5" width="168" height="13.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="subtitle"/>
-                                                </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
                                     </stackView>
@@ -86,6 +77,11 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="200" height="200"/>
+            <connections>
+                <outlet property="imageView" destination="Q5v-z4-1Hm" id="bo6-rf-v98"/>
+                <outlet property="subtitleLabel" destination="OFi-Fh-WIx" id="dmS-tY-fPp"/>
+                <outlet property="titleLabel" destination="nIP-2o-lec" id="hIw-qV-2A1"/>
+            </connections>
             <point key="canvasLocation" x="240.57971014492756" y="202.90178571428569"/>
         </collectionViewCell>
     </objects>

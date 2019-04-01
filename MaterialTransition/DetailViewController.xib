@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="MaterialTransition" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="IfU-NU-lmk" id="ce5-Gu-E9u"/>
+                <outlet property="imageView" destination="U26-x5-Ici" id="F3b-dm-Y1s"/>
+                <outlet property="subtitleLabel" destination="axV-tU-Df5" id="0RY-Em-ltJ"/>
+                <outlet property="titleLabel" destination="brU-57-DFm" id="U37-Mf-6Sq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mug" translatesAutoresizingMaskIntoConstraints="NO" id="U26-x5-Ici">
-                    <rect key="frame" x="0.0" y="84" width="414.00000000000045" height="400"/>
+                    <rect key="frame" x="0.0" y="84" width="414" height="400"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="400" id="XD2-5a-lW2"/>
                     </constraints>

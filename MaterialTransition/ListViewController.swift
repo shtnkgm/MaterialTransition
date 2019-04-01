@@ -30,6 +30,10 @@ extension ListViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ListViewCell.className, for: indexPath) as? ListViewCell else {
             fatalError()
         }
+        cell.hero.id = "cell\(indexPath.row)"
+        cell.imageView.hero.id = "image\(indexPath.row)"
+        cell.titleLabel.hero.id = "title\(indexPath.row)"
+        cell.subtitleLabel.hero.id = "subtitle\(indexPath.row)"
         return cell
     }
 }
@@ -37,6 +41,10 @@ extension ListViewController: UICollectionViewDataSource {
 extension ListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = DetailViewController()
+        vc.view.hero.id = "cell\(indexPath.row)"
+        vc.imageView.hero.id = "image\(indexPath.row)"
+        vc.titleLabel.hero.id = "title\(indexPath.row)"
+        vc.subtitleLabel.hero.id = "subtitle\(indexPath.row)"
         present(vc, animated: true, completion: nil)
     }
 }
