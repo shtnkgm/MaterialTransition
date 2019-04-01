@@ -15,4 +15,8 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         hero.isEnabled = true
     }
+    
+    @IBAction func closeDidTap(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
