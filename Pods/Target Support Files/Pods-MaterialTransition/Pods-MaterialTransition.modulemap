@@ -1,0 +1,6 @@
+framework module Pods_MaterialTransition {
+  umbrella header "Pods-MaterialTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}

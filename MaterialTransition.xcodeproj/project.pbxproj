@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B4AC81BCDFF65E4F8D974BC /* Pods_MaterialTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7542A2CF3E783B128D6AC0 /* Pods_MaterialTransition.framework */; };
 		9726A88722524BD50021311B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9726A88622524BD50021311B /* AppDelegate.swift */; };
 		9726A88922524BD50021311B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9726A88822524BD50021311B /* ViewController.swift */; };
 		9726A88C22524BD50021311B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9726A88A22524BD50021311B /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D82FD88ABB0A75A81AD5FE9 /* Pods-MaterialTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialTransition.release.xcconfig"; path = "Target Support Files/Pods-MaterialTransition/Pods-MaterialTransition.release.xcconfig"; sourceTree = "<group>"; };
 		9726A88322524BD50021311B /* MaterialTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9726A88622524BD50021311B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9726A88822524BD50021311B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		9726A88D22524BD60021311B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9726A89022524BD60021311B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9726A89222524BD60021311B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C77FBAAAF3102A87ED9F1439 /* Pods-MaterialTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialTransition.debug.xcconfig"; path = "Target Support Files/Pods-MaterialTransition/Pods-MaterialTransition.debug.xcconfig"; sourceTree = "<group>"; };
+		DC7542A2CF3E783B128D6AC0 /* Pods_MaterialTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B4AC81BCDFF65E4F8D974BC /* Pods_MaterialTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		274D3B2261FF1A691E6771B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C77FBAAAF3102A87ED9F1439 /* Pods-MaterialTransition.debug.xcconfig */,
+				4D82FD88ABB0A75A81AD5FE9 /* Pods-MaterialTransition.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8AF0AD6D61E71614EFC6B51F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC7542A2CF3E783B128D6AC0 /* Pods_MaterialTransition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9726A87A22524BD50021311B = {
 			isa = PBXGroup;
 			children = (
 				9726A88522524BD50021311B /* MaterialTransition */,
 				9726A88422524BD50021311B /* Products */,
+				274D3B2261FF1A691E6771B7 /* Pods */,
+				8AF0AD6D61E71614EFC6B51F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9726A89522524BD60021311B /* Build configuration list for PBXNativeTarget "MaterialTransition" */;
 			buildPhases = (
+				2941205C0F7FEB8E1D741A31 /* [CP] Check Pods Manifest.lock */,
 				9726A87F22524BD50021311B /* Sources */,
 				9726A88022524BD50021311B /* Frameworks */,
 				9726A88122524BD50021311B /* Resources */,
+				E9610E6E74ED6568DC011F13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2941205C0F7FEB8E1D741A31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaterialTransition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9610E6E74ED6568DC011F13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaterialTransition/Pods-MaterialTransition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaterialTransition/Pods-MaterialTransition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MaterialTransition/Pods-MaterialTransition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9726A87F22524BD50021311B /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		9726A89622524BD60021311B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C77FBAAAF3102A87ED9F1439 /* Pods-MaterialTransition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		9726A89722524BD60021311B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D82FD88ABB0A75A81AD5FE9 /* Pods-MaterialTransition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
