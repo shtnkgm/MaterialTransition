@@ -35,7 +35,10 @@ extension ListViewController: UICollectionViewDataSource {
 }
 
 extension ListViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DetailViewController()
+        present(vc, animated: true, completion: nil)
+    }
 }
 
 extension ListViewController: UICollectionViewDelegateFlowLayout {
