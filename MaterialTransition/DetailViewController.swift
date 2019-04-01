@@ -30,15 +30,15 @@ class DetailViewController: UIViewController {
     
     @objc func didPan(panGestureRecognizer: UIPanGestureRecognizer) {
         let translation = panGestureRecognizer.translation(in: nil)
-        let progress = translation.y / 2 / view.bounds.height
+        let progress = abs(translation.y) / 300
         switch panGestureRecognizer.state {
         case .began:
             hero.dismissViewController()
         case .changed:
             Hero.shared.update(progress)
         default:
-            if progress + panGestureRecognizer.velocity(in: nil).y / view.bounds.height > 0.3 {
-                Hero.shared.animationEnded(true)
+            if progress > 0.7 {
+                Hero.shared.finish()
             } else {
                 Hero.shared.cancel()
             }
